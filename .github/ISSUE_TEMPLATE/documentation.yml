@@ -1,0 +1,35 @@
+name: "Documentation Update"
+description: "Update or add documentation"
+labels: ["type/docs"]
+body:
+  - type: dropdown
+    id: doc_type
+    attributes:
+      label: Documentation Type
+      description: "What type of documentation is this?"
+      required: true
+      options:
+        - "ðŸ“š Architecture"
+        - "ðŸ”§ Technical Guide"
+        - "ðŸ“– API Documentation"
+        - "ðŸŽ“ Tutorial"
+        - "ðŸ“ Process Documentation"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Documentation Details
+      description: "What needs to be documented?"
+      required: true
+      value: |
+        ## Purpose
+        Why is this documentation needed?
+
+        ## Scope
+        What will be covered?
+
+        ## Target Audience
+        Who is this documentation for?
+
+        ## Related Documents
+        List any related documentation
