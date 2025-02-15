@@ -1,0 +1,53 @@
+name: "Feature Implementation"
+description: "New feature or enhancement implementation"
+labels: ["type/feature"]
+body:
+  - type: dropdown
+    id: service
+    attributes:
+      label: Service
+      description: "Which service is this feature for?"
+      required: true
+      options:
+        - "ðŸ¤– AI Service"
+        - "ðŸ”„ Data Gateway"
+        - "ðŸ” Filter Service"
+        - "ðŸ’¬ User Messaging"
+        - "ðŸ“¡ Real-time Service"
+        - "ðŸ“Š Metadata Service"
+        - "ðŸ“¦ Shared Infrastructure"
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: "Feature priority level"
+      required: true
+      options:
+        - "ðŸš¨ P0: Critical/Blocking"
+        - "ðŸ”¥ P1: Core Features"
+        - "ðŸš€ P2: Features"
+        - "ðŸ“ˆ P3: Enhancements"
+        - "ðŸ›¡ï¸ P4: Infrastructure"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "Detailed feature description"
+      required: true
+      value: |
+        ## Overview
+        Brief description of the feature
+
+        ## Technical Requirements
+        - [ ] Requirement 1
+        - [ ] Requirement 2
+
+        ## Integration Points
+        - Required service integrations
+        - External dependencies
+
+        ## Acceptance Criteria
+        - [ ] Criteria 1
+        - [ ] Criteria 2
