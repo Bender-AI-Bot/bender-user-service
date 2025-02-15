@@ -1,0 +1,49 @@
+name: "Bug Report"
+description: "Report a bug or issue"
+labels: ["type/bug"]
+body:
+  - type: dropdown
+    id: service
+    attributes:
+      label: Affected Service
+      description: "Which service is experiencing the issue?"
+      options:
+        - "ðŸ¤– AI Service"
+        - "ðŸ”„ Data Gateway"
+        - "ðŸ” Filter Service"
+        - "ðŸ’¬ User Messaging"
+        - "ðŸ“¡ Real-time Service"
+        - "ðŸ“Š Metadata Service"
+        - "ðŸ“¦ Shared Infrastructure"
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: "How severe is this bug?"
+      options:
+        - "ðŸ”´ Critical: Service Down"
+        - "ðŸŸ  High: Major Feature Broken"
+        - "ðŸŸ¡ Medium: Feature Partially Working"
+        - "ðŸŸ¢ Low: Minor Issue"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: "Detailed description of the bug"
+      value: |
+        ## Current Behavior
+        What is happening?
+
+        ## Expected Behavior
+        What should happen?
+
+        ## Steps to Reproduce
+        1. Step 1
+        2. Step 2
+
+        ## Logs/Screenshots
+        ```
+        Paste any relevant logs here
+        ```
